@@ -1,0 +1,78 @@
+$background: #c6c6c6;
+$main-color: #f45a40;
+$button-background: #ef8f1c;
+$button-color: #fff;
+
+$border-color: #eee;
+$price-color: #ef8f1c;
+$text-color: #7e7f84;
+
+$bottom-background: #ef8f1c;
+$bottom-color: #fff;
+
+
+
+
+
+$h6-color: #fff;
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "PT Sans", Arial;
+}
+* {
+    font-family: "PT Sans", Arial;
+}
+main {
+    flex: 1 0 auto;
+    border-top: 5px solid $main-color;
+}
+
+.btn {
+    background-color: $main-color;
+
+    &:hover {
+        background-color: darken($main-color, 10%);
+    }
+}
+
+.slider {
+    min-height: 650px;
+}
+.slides {
+    min-height: 650px;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $main-color;
+    box-shadow: 0 1px 0 0 $main-color;
+}
+input:not([type]):focus:not([readonly])+label, input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=url]:focus:not([readonly])+label, input[type=time]:focus:not([readonly])+label, input[type=date]:focus:not([readonly])+label, input[type=datetime]:focus:not([readonly])+label, input[type=datetime-local]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label, input[type=number]:focus:not([readonly])+label, input[type=search]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: $main-color;
+}
+
+@mixin main-bottom($bottom-background, $bottom-color) {
+    background-color: $bottom-background;
+    color: $bottom-color;
+    width: 100%;
+    border: none;
+}
+
+@mixin boxes($background) {
+    display: flex;
+    background: $background;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+    
+@mixin contents($border-color) {
+    border: 1px solid $border-color;
+}
+
+@import 'partials/header';
+@import 'partials/base';
+@import 'partials/desc';
+@import 'partials/contact';
+@import 'partials/footer';

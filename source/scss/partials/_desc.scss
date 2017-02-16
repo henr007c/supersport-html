@@ -1,0 +1,79 @@
+h2 {
+    font-size: 24px;
+}
+
+img.image-detail {
+    width: 100%;
+    border: 1px solid $border-color;
+}
+
+img.image-logo {
+    width: 75%;
+}
+.detail-page {
+    margin-top: 30px;
+}
+.detail-price.right {
+    font-size: 40px;
+}
+.detail-before.right {
+    clear: both;
+    text-decoration: line-through;
+}
+.detail-saved.right {
+    clear: both;
+    font-style: italic;
+}
+
+.detail-amount {
+	margin-top: 50px;
+}
+
+input#size {
+    border: 1px solid #ccc;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+input#amount {
+	border: 1px solid #ccc;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.image-group img {
+    
+}
+
+
+ul.tabs {
+    border-bottom: 1px solid #ccc;
+}
+.tab {
+    margin-right: 6px !important;
+    
+    a {
+        background: #f2f1f1;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-radius: 6px 6px 0 0;
+
+        &:active {
+            border-top: 5px solid $main-color;
+        }
+        
+    }  
+
+}
+
+.tabs .indicator {
+    background-color: $main-color;
+    top: 0;
+    height: 5px;
+    border-radius: 4px 4px 0 0;
+}
+
+
+
+

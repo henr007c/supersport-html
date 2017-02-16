@@ -1,0 +1,24 @@
+.contact-form {
+
+
+	p {
+		width: 19%;
+		float: left;
+	}
+	
+	input {
+		border: 1px solid $border-color;
+	}
+
+	textarea {
+		border: 1px solid $border-color;
+	}
+
+	input#name {
+		width: 80%;
+	}
+
+	input#email {
+		width: 80%;
+	}
+}

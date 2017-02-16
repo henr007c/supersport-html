@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".button-collapse").sideNav(),$(".slider").slider({height:650}),$(".slider").slider("pause"),$(".slider").slider("start"),$(".slider").slider("next"),$(".slider").slider("prev")});

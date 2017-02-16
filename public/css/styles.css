@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
+h4 a {
+  font-size: 24px;
+  color: #ef8f1c;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+h4:hover {
+  color: #ca740e;
+  text-decoration: underline; }
+
+.popular-products {
+  overflow: hidden;
+  text-align: center; }
+  .popular-products:before, .popular-products:after {
+    background-color: #eee;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%; }
+  .popular-products:before {
+    right: .5em;
+    margin-left: -50%; }
+  .popular-products:after {
+    left: .5em;
+    margin-right: -50%; }
+
+.box {
+  display: flex;
+  background: #fff;
+  border-radius: 0;
+  margin-bottom: 20px; }
+
+.content {
+  border: 1px solid #eee; }
+
+.rates {
+  padding: 2%; }
+
+.rate-product {
+  font-size: 16px !important;
+  cursor: pointer; }
+
+img.images {
+  width: 100%;
+  border-bottom: 1px solid #eee; }
+
+.info-product {
+  margin: 0 5%;
+  border-bottom: 1px solid #eee; }
+  .info-product h5 {
+    font-size: 16px; }
+  .info-product p {
+    font-size: 12px; }
+
+.price-product {
+  width: 100%; }
+
+.price-product p {
+  color: #ef8f1c;
+  float: left;
+  margin-left: 2%; }
+
+.price-product .like-product, .price-product .add-product {
+  float: right;
+  font-size: 18px;
+  line-height: 48px;
+  margin-right: 2%; }
+
+.buy-product {
+  background-color: #ef8f1c;
+  color: #fff;
+  width: 100%;
+  border: none;
+  height: 28px; }
+
+.add {
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 10px; }
+  .add:after {
+    content: "Add +"; }
+  .add:hover {
+    cursor: pointer;
+    background-color: #004d00; }
+
+.remove {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 10px; }
+  .remove:after {
+    content: "Remove -"; }
+  .remove:hover {
+    cursor: pointer;
+    background-color: #cc0000; }

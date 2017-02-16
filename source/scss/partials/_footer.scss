@@ -1,0 +1,52 @@
+$footer-background: #2a2d34;
+$second-background: #f45a40;
+
+footer.page-footer {
+	background-color: $footer-background;
+	padding-top: 0;
+
+	.signup-field {
+		background-color: $second-background;
+		margin-bottom: 20px;
+		
+		h6 {
+			color: $h6-color;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding: 5% 0;
+		}
+	}	
+	
+	h5 {
+		text-transform: uppercase;
+	}
+
+	a {
+		color: $text-color;
+	}
+
+	p {
+		color: $text-color;
+		line-height: 12px;
+	}
+
+	.input-field.newsletter {
+	    margin-top: 30px;
+	}
+
+	input#email {
+		background: #fff;
+    	border: none;
+    	height: 36px;
+    	padding: 0px 0px 0 10px;
+	}
+	
+	input[type="submit"] {
+	    background-color: darken($second-background, 10%);
+	    border: none;
+	    color: #fff;
+	    padding: 8px 18px;
+    	text-transform: uppercase;
+	}
+
+}
